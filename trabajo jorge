@@ -1,0 +1,41 @@
+1º primera funcion de la pagina de busqueda:
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+
+
+
+2º segunda funcion de la pagina busqueda:
+
+function myFunc(theObject) {
+  theObject = {make: 'Ford', model: 'Focus', year: 2006};
+}
+
+var mycar = {make: 'Honda', model: 'Accord', year: 1998},
+var x, y;
+
+x = mycar.make;     // x toma el valor "Honda"
+
+myFunc(mycar);
+y = mycar.make;     // y sigue con el valor "Honda" 
+
+
+3º tercera funcion de la pagina busqueda:
+
+(se usan objetos)
+
+
+4º primera funcion de la página de edicion:
+
+(en internet pone que se usa esto)
+
+document.createElement();
+elemento.appendChild();
+
+5º segunda funcion de la pagina de edicion:
+
+validar los campos cuando estamos añadiendo algun elemento(como hemos estado haciendo siempre)
