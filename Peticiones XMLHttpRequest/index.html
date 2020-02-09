@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Ejemplo Ajax</title>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/funcionesAjax.js" defer></script>
+    <script src="js/pruebas.js" defer></script>
+</head>
+<body>
+<div id="spinner" class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+</div>
+<div>
+    <button onclick="funcionAjaxAsincronaXML();">OBTENER DATOS XML</button>
+
+</div>
+<div>
+    <form id="formularioPDO" action="">
+   
+    <input type="submit" id="botonPDO" value="OBTENER DATOS PDO"/>
+    </form>
+</div>
+
+  <h1>Datos JSON</h1>
+        <div>
+            <form id="formularioJSON" action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" value="" name="nombre" id="nombre" />
+                <p></p>
+
+                <label for="tipo">Tipo</label>
+                <select name="tipo" id="tipo">
+                    <option value="labios">labios</option>
+                    <option value="ojos">ojos</option>
+                    <option value="piel">piel</option>
+                </select>
+                <p></p>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="15" rows="5"></textarea>
+                <p></p>
+
+                <p></p>
+                <label for="Cruelty_Free">Cruelty Free</label>
+                <input type="checkbox" name="animal" id="animal">Sí
+                
+                <p></p>
+
+
+                <button type="submit" id="botonBusqueda">Buscar</button>
+            </form>
+        </div>
+        <hr>
+        <h1>Resultado de la búsqueda:</h1>
+        <p></p>
+        <div id="resultado">
+
+        </div>
+        <hr>
+</body>
+</html>
